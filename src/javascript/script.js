@@ -22,3 +22,19 @@ $(document).ready(function () {
       $(this).addClass('active');
     });
   });
+
+// abre arquivos pdfs
+function porque() {
+    window.open("src/arquivos/Causa Raiz - 5 porquês.pdf", "_blank");
+  }
+
+function canva() {
+    window.open("src/arquivos/canvas-entendimento.pdf", "_blank");
+  }
+
+function User() {
+    window.open("src/arquivos/User Stories  Atualizado.pdf", "_blank");
+  }
+  function Map() {
+    window.open("src/arquivos/Plantilla Mapa de Empatía.pdf", "_blank");
+  }
