@@ -42,3 +42,20 @@ $(document).ready(function() {
     });
   });
   
+// animação elementos dish
+$(document).ready(function () {
+    function verificarScroll() {
+      $('.fade-in').each(function () {
+        const posicaoTopo = $(this).offset().top;
+        const alturaJanela = $(window).scrollTop() + $(window).height() - 100;
+  
+        if (posicaoTopo < alturaJanela) {
+          $(this).addClass('visible');
+        }
+      });
+    }
+  
+    $(window).on('scroll', verificarScroll);
+    verificarScroll(); 
+  });
+  
