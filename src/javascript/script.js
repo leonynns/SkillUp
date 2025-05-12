@@ -10,3 +10,15 @@ $(document).ready(function(){
       });
   
   });
+
+// troca de menu navbar
+$(document).ready(function () {
+    // ao clicar em qualquer nav-item
+    $('.nav-item').on('click', function () {
+      // remove 'active' de todos
+      $('.nav-item').removeClass('active');
+      
+      // adiciona 'active' apenas ao clicado
+      $(this).addClass('active');
+    });
+  });
