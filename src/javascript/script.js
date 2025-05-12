@@ -24,17 +24,21 @@ $(document).ready(function () {
   });
 
 // abre arquivos pdfs
-function porque() {
-    window.open("src/arquivos/Causa Raiz - 5 porquês.pdf", "_blank");
-  }
-
-function canva() {
-    window.open("src/arquivos/canvas-entendimento.pdf", "_blank");
-  }
-
-function User() {
-    window.open("src/arquivos/User Stories  Atualizado.pdf", "_blank");
-  }
-  function Map() {
-    window.open("src/arquivos/Plantilla Mapa de Empatía.pdf", "_blank");
-  }
+$(document).ready(function() {
+    $('#btnPorque').on('click', function() {
+      window.open("src/arquivos/Causa Raiz - 5 porquês.pdf", "_blank");
+    });
+  
+    $('#btnCanva').on('click', function() {
+      window.open("src/arquivos/canvas-entendimento.pdf", "_blank");
+    });
+  
+    $('#btnUser').on('click', function() {
+      window.open("src/arquivos/User Stories  Atualizado.pdf", "_blank");
+    });
+  
+    $('#btnMap').on('click', function() {
+      window.open("src/arquivos/Plantilla Mapa de Empatía.pdf", "_blank");
+    });
+  });
+  
